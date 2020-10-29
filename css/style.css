@@ -1,0 +1,130 @@
+body {
+    background-color: #222222;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Navbar */
+
+.navbar .navbar-nav {
+    display: inline-flex;
+    float: none;
+    vertical-align: top;
+  }
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+.nav {
+  background: #222222;
+}
+
+/* Header */
+
+header {
+  padding: 200px 0 100px;
+  height: 100vh;
+}
+
+.avatar {
+  width: 15%;
+}
+
+.social-icon {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 27px;
+  margin-right: 11px;
+  cursor: pointer;
+}
+
+.social-icon i {
+  transition: 0.4s all;
+}
+
+.social-icon:hover i {
+  transform: scale(1.4);
+}
+
+.social-linkedin {
+  background-color: #0077B5;
+}
+
+.social-github {
+  background-color: #333333;
+}
+
+.social {
+  display: inline-block;
+}
+
+/* Projecten */
+
+.projecten_img {
+  width: 25%;
+}
+
+.autogrid {
+  display: grid;
+
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  padding: 0;
+  width: 640px;
+
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.autogrid__element {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.autogrid__element img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: .4s;
+  filter: grayscale(80%);
+}
+
+.autogrid__element:hover img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.lb-t {
+  color: rgba(255,255,255,.5)
+}
+
+.lb-p {
+  color: white;
+}
+
+.lb-a {
+  color: blue;
+}
+
+@media only screen and (max-width: 700px) {
+  .autogrid {
+      width: 100%;
+      grid-template-columns: 1fr;
+  }
+}
